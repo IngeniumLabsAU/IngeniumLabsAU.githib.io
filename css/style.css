@@ -687,6 +687,18 @@ a.btn-mod:focus{
     background: #e41919;
 }
 
+.btn-mod.btn-border-lm{
+    color: #fff;
+    border: 2px solid rgba(255,255,255, .75);
+    background: #000000;
+}
+.btn-mod.btn-border-lm:hover,
+.btn-mod.btn-border-lm:focus{
+    color: #111;
+    border-color: #000000;
+    background: #fff;
+}
+
 .btn-mod.btn-border-w{
     color: #fff;
     border: 2px solid rgba(255,255,255, .75);
