@@ -39,7 +39,7 @@
 <html>  
 <head>
         <title>Ingenium Labs</title>
-	<meta name="description" content="To be defensive, you must know the offensive. An Australian based Cyber Security establishment offering various consulting services to help secure your digital perimeter.">
+	    <meta name="description" content="To be defensive, you must know the offensive. An Australian based Cyber Security establishment offering various consulting services to help secure your digital perimeter.">
         <meta name="keywords" content="penetration testing, cyber security, consulting, services, web application pentest, external infrastructure, pentest, penetration, test, incident response, osint, cloud, core subnet, australian, melbourne">
         <meta charset="utf-8">
         <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
@@ -53,7 +53,55 @@
         <link rel="stylesheet" href="css/animate.min.css">
         <link rel="stylesheet" href="css/vertical-rhythm.min.css">
         <link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/magnific-popup.css">             
+        <link rel="stylesheet" href="css/magnific-popup.css"> 
+        <!-- modal more info CSS-->            
+        <style>
+            /* The Modal (background) */
+            .modal {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                padding-top: 100px;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0,0.4);
+            }
+
+            /* Modal Content */
+            .modal-content {
+                background-color: #fefefe;
+                margin: auto;
+                padding: 20px;
+                border-radius: 10px; /* Add rounded corners */
+                width: 75%;
+                max-height: 70vh;
+                overflow: auto;
+                position: relative; /* Add position relative */
+            }
+
+            /* The Close Button */
+            .close {
+                color: #aaaaaa;
+                position: absolute; /* Change position to absolute */
+                top: 10px; /* Adjust the top value to your preference */
+                right: 10px; /* Adjust the right value to your preference */
+                font-size: 28px;
+                font-weight: bold;
+                z-index: 2; /* Increase the z-index value */
+            }
+
+            .close:hover,
+            .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+        </style>
 </head>
     <body class="appear-animate"> 
         <!-- Page Loader -->        
@@ -134,247 +182,566 @@
             <section class="page-section">
                 <div class="container relative">
                     <!-- Features Grid -->
+                    <!-- expiremental feature item-->
                     <!-- Features Item -->
-		    <div class="row multi-columns-row alt-features-grid">
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="alt-features-item align-center">
-                        <div class="alt-features-icon">
-                            <span class="icon-beaker"></span>
-                        </div>
-                        <h3 class="alt-features-title font-alt">Vulnerability Research</h3>
-                        <div class="alt-features-descr align-left">
-                            Our in-depth and comprehensive approach to uncovering and documenting system vulnerabilities is a major asset in cybersecurity defense. By actively researching and identifying potential threats in a system, our team anticipates exploits that hackers may leverage. This ongoing, proactive process targets a range of environments, extending to but not limited to software, firmware, hardware, and network systems. The end-goal is to identify vulnerabilities, study their impact, develop mitigations, and contribute to the overall hardening of your system. We keep you prepared for possible threat scenarios, ensuring you are always a step ahead.
-            <p>
-        <div class="mb-10">
-        </div>
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="alt-features-item align-center">
+                            <div class="alt-features-icon">
+                                <span class="icon-flag"></span>
+                            </div>
+                            <h3 class="alt-features-title font-alt">Adversary Attack Simulation</h3>
+                            <div class="alt-features-descr align-left">
+                                A real-world simulated cyber attack. These engagements are objective-orientated and our techniques unconventional to emulate apex threat actors. We incorporate attack realism and stealth tradecraft to ensure that your remediations and cyber defence use cases are built from relevant and real-world tactics, techniques and procedures (TTPs).
+                                <br><br><div style="display: flex; justify-content: center;">
+                                    <a href="javascript:void(0)" class="btn btn-mod btn-border-lm btn-medium btn-round" onclick="openModal('myModal1')">Learn More</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div> 
-                <!-- End Features Item -->
-                    <!-- Features Item -->
-                    <div class="row multi-columns-row alt-features-grid">
-                        <div class="col-sm-6 col-md-4 col-lg-4">
-                            <div class="alt-features-item align-center">
-                                <div class="alt-features-icon">
-                                    <span class="icon-puzzle"></span>
-                                </div>
-                                <h3 class="alt-features-title font-alt">Reverse Engineering</h3>
-                                <div class="alt-features-descr align-left">
-                                    We can provide a comprehensive and deep-dive analysis of your software and hardware components. The primary goal of this service is to decipher the intricate structures, functionalities, and potential weaknesses that could be exploited by adversaries. 
-                                    Through a meticulous dissection of code, protocols, and algorithms, we delve into the internal workings of your systems. This process allows us to identify any hidden flaws or vulnerabilities, and also helps us to understand complex software behavior.
-                                    Whether we're dealing with proprietary, custom-built, or legacy systems, we are proficient at identifying potential security threats, proposing effective solutions, and suggesting potential enhancements.
 
-                                    <p>
-                <div class="mb-10">
-                </div>
-                                </div>
-                            </div>
-                        </div> 
-                        <!-- End Features Item -->
-                <!-- End Features Item -->
-                    <!-- Features Item -->
-                    <div class="row multi-columns-row alt-features-grid">
-                        <div class="col-sm-6 col-md-4 col-lg-4">
-                            <div class="alt-features-item align-center">
-                                <div class="alt-features-icon">
-                                    <span class="icon-caution"></span>
-                                </div>
-                                <h3 class="alt-features-title font-alt">Malware Analysis</h3>
-                                <div class="alt-features-descr align-left">
-                                    We specialise in the systematic breakdown and investigation of malware, employing advanced techniques to uncover its origin, purpose, and potential for harm.
+                    <!-- Modal -->
+                    <div id="myModal1" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('myModal1')">&times;</span>
+                            <h2>Adversary Attack Simulation</h2>
+                                <p>
+                                    Effectively mitigate cyber threats and illuminate covert attack paths into your establishment, while concurrently making any potential adversaries apprehensive. Our adversary simulations are intended to prepare your defences for any cyber onslaught, with the intention to prevail, both technologically and strategically.
+                                </p>
+                                <p>
+                                    Our engagements are designed to fortify and enhance your system's breach readiness, incorporating extortion techniques, stealth trade-craft and esoteric attack vectors seldom included in conventional penetration testing.
+                                </p>
+                                <p>
+                                    Engagements are thorough and lengthy, typically spanning no less than eight weeks per project and involving between 450 to 500 work hours.
+                                </p>
+                                <p>
+                                    We work with zero prior knowledge. We do not request network access, physical access, domain user accounts, IP address ranges, or network diagrams. We manually conduct all simulation actions and write our reports by hand. Our reports, meticulously crafted, are straightforward and comprehendible, and we will personally guide you through the outcomes.
+                                </p>
+                                <p>
+                                    Though selective scope security assessments provide considerable academic value, they may be prone to defender bias, blind spots, and tunnel vision effects, potentially compromising your infrastructure security and customer data. Worse still, they may breed a false sense of security. As a result, we simulate the most challenging cyber scenarios imaginable, including those not previously considered. In our current climate, corporations and their defense teams can no longer define the scope, path, or make linear predictions of a potential attack.
+                                </p>
+                                <p>
+                                    We strive to create positive disruption, challenging both established and emerging security methodologies, and rigorously scrutinising your infrastructure. We dissect every security layer to its core components, regardless of cost or marketing hype, assisting you in achieving a secure environment encompassing sound security engineering and the implementation of practical, proven solutions.
+                                </p>
+                                <p>
+                                    Given the sensitive nature of our services, we engage exclusively with established entities and corporations that are genuinely interested in enhancing their security, as well as that of their customers.
+                                </p>
+                                <p>
+                                    Following an engagement with us, your security staff will likely rest easier, as the valuable telemetry collected will enable them to improve in areas that matter most to threat actors and extortionists, areas that may currently be underappreciated in your establishment.
+                                </p>
+                                <h3>Inclusions</h3>
+                                <ul>
+                                    <li>Zero-knowledge engagements,</li>
+                                    <li>Initial access engagements,</li>
+                                    <li>Perimeter infiltration,</li>
+                                    <li>Out-of-band user access misuse,</li>
+                                    <li>Custom initial access implants,</li>
+                                    <li>Persistence simulation (as required),</li>
+                                    <li>Deceptive attribution,</li>
+                                    <li>Advanced lateral movement strategies,</li>
+                                    <li>Simulation of exfiltration of production data,</li>
+                                    <li>Sabotage, data encryption, and extortion simulation options exist.</li>
+                                </ul>
+                                <h3>Benefits</h3>
+                                <p>
+                                    Strengthen defenses where necessary, optimise as needed, and allocate resources judiciously. There is no magic formula, only sound engineering complemented by experience and prudence.
+                                </p>
+                                <h3>Enquiries</h3>
+                                <p>
+                                    Our e-mail address is located on our <a href="contact.html">contact</a> page.
+                                </p>
+                        </div>
+                    </div>
+                    <!-- End Features Item -->
+                    <script>
+                    var currentModal = null;
 
-                                    Our analysis process includes static and dynamic methodologies, providing a detailed dissection of sample code structure alongside revealing real-time interaction with system resources and potential propagation mechanisms.
-                                    
-                                    Our team is adept at analyzing a wide range of malicious software, from common threats to advanced persistent threats (APTs) that may lurk undetected within systems.
-                                    
-                                    By thoroughly understanding the intricacies of these threats, we offer insights to fortify your system defenses, tailor your response protocols, and ensure the security integrity of your environment against malicious software attacks.
-                    <p>
-                <div class="mb-10">
-                </div>
-                                </div>
+                    // When the user clicks on the button, open the modal
+                    function openModal(modalId) {
+                        var modal = document.getElementById(modalId);
+                        modal.style.display = "block";
+                        currentModal = modal; // keep track of the currently opened modal
+                    }
+
+                    // When the user clicks on <span> (x), close the modal
+                    function closeModal(modalId) {
+                        var modal = document.getElementById(modalId);
+                        modal.style.display = "none";
+                        currentModal = null; // clear the currently opened modal
+                    }
+
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) {
+                        if (currentModal && event.target == currentModal) {
+                            currentModal.style.display = "none";
+                            currentModal = null; // clear the currently opened modal
+                        }
+                    }
+                    </script>
+                    <!--end expirmental feature item-->
+                    <!-- expiremental feature item-->
+                    <!-- Features Item -->
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="alt-features-item align-center">
+                            <div class="alt-features-icon">
+                                <span class="icon-beaker"></span>
                             </div>
-                        </div> 
-                        <!-- End Features Item -->
-		    <!-- Features Item -->
-		    <div class="row multi-columns-row alt-features-grid">
-                        <div class="col-sm-6 col-md-4 col-lg-4">
-                            <div class="alt-features-item align-center">
-                                <div class="alt-features-icon">
-                                    <span class="icon-scope"></span>
+                            <h3 class="alt-features-title font-alt">Vulnerability Research</h3>
+                            <div class="alt-features-descr align-left">
+                                A focus on intricate structures and functionalities, an examination of complex systems and operations. This permits the meticulous dissection of target internals with the objective of abuse, allowing vulnerability discovery, exploit development, payload integration and advanced reliability. Transform the discovered into strategic opportunities.
+                                <br><br><div style="display: flex; justify-content: center;">
+                                    <a href="javascript:void(0)" class="btn btn-mod btn-border-lm btn-medium btn-round" onclick="openModal('myModal2')">Learn More</a>
                                 </div>
-                                <h3 class="alt-features-title font-alt">Penetration Test</h3>
-                                <div class="alt-features-descr align-left">
-                                   Predominantly manually executed to explore attack paths tailored in context of the targeted environment. Our goal is focused on complete asset take over, identification and risk assessment pertaining to leverageable vulnerabilities, integrated security controls, misconfigurations and overall implementation. We offer this service against a variety of environments.
-					<p>
-				<div class="mb-10">
-				</div>
-                                </div>
-                            </div>
-                        </div> 
-                        <!-- End Features Item -->
-		    <!-- Features Item -->
-                       <div class="col-sm-6 col-md-4 col-lg-4">
-                            <div class="alt-features-item align-center">
-                                <div class="alt-features-icon">
-                                    <span class="icon-profile-male"></span>
-                                </div>
-                                <h3 class="alt-features-title font-alt">Reconnaissance & Intelligence</h3>
-                                <div class="alt-features-descr align-left">
-                                    We target organisations, employees and individuals to determine their level of discoverability. Our objective is to obtain information from various resources which could be leveraged for further sophisticated attacks. 
-                                <div class="mb-10">
-				</div>
-				</div>
-                            </div>
-			    </div>
-			<!-- End Features Item -->
-                        <!-- Features Item -->
-                        <div class="col-sm-6 col-md-4 col-lg-4">
-                            <div class="alt-features-item align-center">
-                                <div class="alt-features-icon">
-                                    <span class="icon-shield"></span>
-                                </div>
-                                <h3 class="alt-features-title font-alt">Vulnerability Assessment</h3>
-                                <div class="alt-features-descr align-left">
-                                    Execution of automated test cases in parallel with manual support accompanied by the prime objective to identify, quantify and determine the priority of vulnerabilities impacting the target.				
-				</div>
                             </div>
                         </div>
-			 <!-- End Features Item -->
-			 <!-- Features Item -->
-			 <div class="col-sm-6 col-md-4 col-lg-4">
-                            <div class="alt-features-item align-center">
-                                <div class="alt-features-icon">
-                                    <span class="icon-mobile"></span>
+                    </div>
+
+                    <!-- Modal -->
+                    <div id="myModal2" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('myModal2')">&times;</span>
+                            <h1>Vulnerability Research</h1>
+                                <p>
+                                    Although system audits provide conceptual value, they often suffer from inherent blind spots and biases. Our approach transcends these limitations by thoroughly dissecting the target with the objective of vulnerability discovery, leading to exploit development, as well as, offering regression testing and patch solutions.
+                                </p>
+                                <h3>Inclusions</h3>
+                                <ul>
+                                    <li>Advanced fuzzing techniques,</li>
+                                    <li>Technical analysis,</li>
+                                    <li>Reverse Engineering,</li>
+                                    <li>Vulnerability discovery,</li>
+                                    <li>Exploit development,</li>
+                                    <li>Zero-day vulnerabilities,</li>
+                                    <li>N-day vulnerabilities,</li>
+                                    <li>Cryptographic routines and implementation,</li>
+                                    <li>Software vulnerabilities,</li>
+                                    <li>Firmware vulnerabilities,</li>
+                                    <li>Hardware vulnerabilities,</li>
+                                    <li>Open-source targets,</li>
+                                    <li>Proprietary targets,</li>
+                                    <li>Industrial control systems,</li>
+                                    <li>Customised research.</li>
+                                </ul>
+                                <h3>Enquiries</h3>
+                                <p>
+                                    Our e-mail address is located on our <a href="contact.html">contact</a> page.
+                                </p>
+                        </div>
+                    </div>
+                    <!-- End Features Item -->
+                    <!-- End expiremental feature item-->
+
+                    
+
+                    <!-- expiremental feature item-->
+                    <!-- Features Item -->
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="alt-features-item align-center">
+                            <div class="alt-features-icon">
+                                <span class="icon-puzzle"></span>
+                            </div>
+                            <h3 class="alt-features-title font-alt">Reverse Engineering</h3>
+                            <div class="alt-features-descr align-left">
+                                Sophisticated and complex operations, an exploration of multifaceted mechanisms and processes. This facilitates a thorough disassembly of the target with the aim of software, malware, binary, assembly, algorithm and protocol analysis, followed by source-code recovery, de-obfuscation, analysis of cryptographic routines and devising optimisation strategies.
+                                <br><br><div style="display: flex; justify-content: center;">
+                                    <a href="javascript:void(0)" class="btn btn-mod btn-border-lm btn-medium btn-round" onclick="openModal('myModal3')">Learn More</a>
                                 </div>
-                                <h3 class="alt-features-title font-alt">Mobile Application Assessment</h3>
-                                <div class="alt-features-descr align-left">
-                                    Application layer, binary analysis and local device exploitation. We offer this service across Android, iOS & UWPs.
-                                <div class="mb-10">
-				</div>
-				</div>
                             </div>
                         </div>
-			<!-- End Features Item -->
-			<!-- Features Item -->
-			 <div class="col-sm-6 col-md-4 col-lg-4">
-                            <div class="alt-features-item align-center">
-                                <div class="alt-features-icon">
-                                    <span class="fa fa-linux"></span>
+                    </div>
+
+                    <!-- Modal -->
+                    <div id="myModal3" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('myModal3')">&times;</span>
+                            <h2>Reverse Engineering</h2>
+                                <p>
+                                    Unmask the invisible and gain critical insights into your system's underlying functionality. We delve deep into your applications, software, and digital systems, extracting the crucial blueprint of operations to boost security and optimisation.
+                                </p>
+                                <p>
+                                    Our meticulous approach involves systematic dismantling of your systems, extracting embedded knowledge to understand the intricacies and complexities at play. Our reverse engineering encompasses varied methods, including static and dynamic analysis, thus illuminating the most concealed areas of your system's architecture.
+                                </p>
+                                <p>
+                                    We delve into your system from a neutral standpoint and rely on our technical prowess to unravel the layers. Our final reports are detailed and lucid, providing you with an easy-to-understand roadmap of our findings and recommended strategies.
+                                </p>
+                                <p>
+                                    We challenge the status quo and examine with a critical lens. Our aim is not to criticise but to assist you in achieving an optimised, efficient, and secure environment built on reliable security engineering and practical solutions.
+                                </p>
+                                <p>
+                                    Due to the critical nature of our services, we exclusively engage with established entities and organisations genuinely interested in understanding their system's anatomy and enhancing security.
+                                </p>
+                                <p>
+                                    Following our engagement, your team will gain a renewed perspective on your system's architecture and operation, enabling them to enhance system efficiency and security in areas crucial to your establishment.
+                                </p>
+                                <h3>Inclusions</h3>
+                                <ul>
+                                    <li>Malware analysis,</li>
+                                    <li>Binary and assembly analysis,</li>
+                                    <li>Protocol reverse engineering,</li>
+                                    <li>Software, firmware and embedded systems,</li>
+                                    <li>Network traffic inspection,</li>
+                                    <li>Source code recovery,</li>
+                                    <li>Optimisation recommendations.</li>
+                                </ul>
+                                <h3>Benefits</h3>
+                                <p>
+                                    Bolster system security, improve efficiency, and direct resources intelligently. We help you gain a deeper understanding of your assets, helping you make informed decisions and strategic direction.
+                                </p>
+                                <h3>Enquiries</h3>
+                                <p>
+                                    Our e-mail address is located on our <a href="contact.html">contact</a> page.
+                                </p>
+                            
+                            
+                        </div>
+                    </div>
+                    <!-- End Features Item -->
+                    <!-- End expiremental feature item-->
+
+
+                    <!-- expiremental feature item-->
+                    <!-- Features Item -->
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="alt-features-item align-center">
+                            <div class="alt-features-icon">
+                                <span class="icon-scope"></span>
+                            </div>
+                            <h3 class="alt-features-title font-alt">Penetration Test</h3>
+                            <div class="alt-features-descr align-left">
+                                Primarily manually executed to explore attack paths and trajectories tailored in context of the target specifications. Our objective is focused on complete asset compromise, identification and risk assessment pertaining to leverageable vulnerabilities, integrated security controls, misconfigurations and overall implementation. This service is provided against a broad spectrum of environments, there are no bounds to our capabilities.
+                                <br><br><div style="display: flex; justify-content: center;">
+                                    <a href="javascript:void(0)" class="btn btn-mod btn-border-lm btn-medium btn-round" onclick="openModal('myModal4')">Learn More</a>
                                 </div>
-                                <h3 class="alt-features-title font-alt">Environment Breakout</h3>
-                                <div class="alt-features-descr align-left">
-                                    We assess the efficiency of your locked down environment through an attempt to escape intended restrictions and escalate privileges. We have experience performing this service across; Citrix containers, restricted shell environments (rShell), restricted operating environments (SOEs) and more.
-                                <div class="mb-10">
-				</div>
-				</div>
                             </div>
                         </div>
-			<!-- End Features Item -->
-			<!-- Features Item -->
-		 	<div class="col-sm-6 col-md-4 col-lg-4">
-                            <div class="alt-features-item align-center">
-                                <div class="alt-features-icon">
-                                    <span class="icon-layers"></span>
+                    </div>
+
+                    <!-- Modal -->
+                    <div id="myModal4" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('myModal4')">&times;</span>
+                            <h2>Penetration Testing</h2>
+                            <p>
+                             Involves an active offensive analysis of your system for any potential vulnerabilities that could result from improper system configuration, known and unknown hardware or software flaws, or operational weaknesses in process or technical countermeasures.
+                            </p>
+                            <p>
+                            We identify gaps in your security posture and provide recommendations to mitigate risks. We take a proactive approach to security, replicating the techniques used by real-world attackers to ensure your systems can withstand even the most persistent threats.
+                            </p>
+                            <p>
+                            Upon completion of our engagement, your team will receive a comprehensive report detailing our findings, including the identified vulnerabilities, the risks they pose, and our expert recommendations for mitigation. This allows your team to understand the vulnerabilities in their context, prioritising remediation efforts based on the risk they pose to your establishment.
+                            </p>
+                            <h3>Inclusions</h3>
+                            <ul>
+                                <li>External Infrastructure</li>
+                                <li>Internal Infrastructure</li>
+                                <li>Wireless network</li>
+                                <li>Web application</li>
+                                <li>Application programming interfaces (APIs)</li>
+                                <li>Mobile application (Android, iOS, UWPs)</li>
+                                <li>Compiled (thick-client) application (Windows, MacOS, Linux)</li>
+                                <li>Restricted environment and containerisation breakout</li>
+                                <li>Physical security</li>
+                                <li>Social engineering</li>
+                            </ul>
+                            <h3>Benefits</h3>
+                            <p>
+                            Enhance your system's security, increase your understanding of the threats, and mitigate risks effectively. We offer an objective analysis, allowing you to make informed decisions about your security investments and strategies.
+                            </p>
+                            <h3>Enquiries</h3>
+                            <p>
+                            Our e-mail address is located on our <a href="contact.html">contact</a> page.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Features Item -->
+                    <!-- End expiremental feature item-->
+
+
+                    <!-- expiremental feature item-->
+                    <!-- Features Item -->
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="alt-features-item align-center">
+                            <div class="alt-features-icon">
+                                <span class="icon-shield"></span>
+                            </div>
+                            <h3 class="alt-features-title font-alt">Vulnerability Assessment</h3>
+                            <div class="alt-features-descr align-left">
+                                Execution of automated test cases in parallel with manual support accompanied by the prime objective to identify, quantify and determine the priority of vulnerabilities affecting the target system(s). Our methodical approach ensures a thorough and precise review, inheriting a heightened comprehension of your security posture, threat landscape and associated mitigation strategies.<br>
+                                <br><br><div style="display: flex; justify-content: center;">
+                                    <a href="javascript:void(0)" class="btn btn-mod btn-border-lm btn-medium btn-round" onclick="openModal('myModal5')">Learn More</a>
                                 </div>
-                                <h3 class="alt-features-title font-alt">Subdomain Takeover</h3>
-                                <div class="alt-features-descr align-left">
-                                    We seek any vulnerable DNS configuration which may allow unauthorised takeover of subdomains belonging to the target's core subnet or cloud ecosystem.
-                                <div class="mb-10">
-				</div>
-				</div>
                             </div>
                         </div>
-			<!-- End Features Item -->
-			<!-- Features Item -->
-			    <div class="col-sm-6 col-md-4 col-lg-4">
-                            <div class="alt-features-item align-center">
-                                <div class="alt-features-icon">
-                                    <span class="icon-flag"></span>
+                    </div>
+
+                    <!-- Modal -->
+                    <div id="myModal5" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('myModal5')">&times;</span>
+                            <h2>Vulnerability Assessment</h2>
+                            <p>
+                            We examine your network, applications, and systems, aiming to uncover any vulnerabilities that may exist. Our approach goes beyond mere automated scanning, including a comprehensive manual analysis to ensure nuanced and complex vulnerabilities are not overlooked.
+                            </p>
+                            <p>
+                            Our team diligently catalogues each vulnerability, examining its potential impact and the likelihood of exploitation. These findings are then collated into an exhaustive report that clearly outlines each vulnerability, its severity, and our expert recommendations for mitigation.
+                            </p>
+                            <p>
+                            Your establishment will be better equipped to understand its threat landscape and make informed decisions to improve security measures, system configurations, and defensive strategies.
+                            </p>
+                            <h3>Inclusions</h3>
+                            <ul>
+                                <li>Network vulnerability assessments,</li>
+                                <li>Application vulnerability assessments,</li>
+                                <li>Infrastructure vulnerability assessments,</li>
+                                <li>Wireless environment vulnerability assessments,</li>
+                                <li>Cloud security vulnerability assessments,</li>
+                                <li>Physical security assessments.</li>
+                            </ul>
+                            <h3>Benefits</h3>
+                            <p>
+                            Uncover security vulnerabilities, mitigate risks, and strengthen your security posture. We provide you with a detailed understanding of your current security state, helping you make data-driven decisions and prioritise improvements based on risk.
+                            </p>
+                            <h3>Enquiries</h3>
+                            <p>
+                            Our e-mail address is located on our <a href="contact.html">contact</a> page.
+                            </p>   
+                        </div>
+                    </div>
+                    <!-- End Features Item -->
+                    <!-- End expiremental feature item-->
+
+
+
+                    <!-- expiremental feature item-->
+                    <!-- Features Item -->
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="alt-features-item align-center">
+                            <div class="alt-features-icon">
+                                <span class="icon-profile-male"></span>
+                            </div>
+                            <h3 class="alt-features-title font-alt">Intelligence & Surveillance</h3>
+                            <div class="alt-features-descr align-left">
+                                We target organisations, employees and individuals to determine their level of discoverability. Our objective is to obtain information that could be leveraged for further sophisticated attacks. 
+
+As surveillance grows increasingly prevalent, gaining firsthand intelligence on key decision-makers is becoming an ordinary commodity for malign actors and competitors.  We offer simulation of various ISR techniques, extending beyond simple user awareness training or phishing campaigns.
+                                <br><br><div style="display: flex; justify-content: center;">
+                                    <a href="javascript:void(0)" class="btn btn-mod btn-border-lm btn-medium btn-round" onclick="openModal('myModal6')">Learn More</a>
                                 </div>
-                                <h3 class="alt-features-title font-alt">Attack Simulation</h3>
-                                <div class="alt-features-descr align-left">
-                                    A real-world simulated cyber attack against any developed environment. These engagements are objective-orientated and our techniques unconventional to emulate apex threat actors. We incorporate attack realism and stealth tradecraft to ensure that your remediations and cyber defence use cases are built from relevant and real-world tactics, techniques and procedures (TTPs).</li>
-                                	<div class="mb-10">
-					</div>
-				</div>
                             </div>
                         </div>
-			<!-- End Features Item -->
-			<!-- Features Item -->    
-			    <div class="col-sm-6 col-md-4 col-lg-4">
-                            <div class="alt-features-item align-center">
-                                <div class="alt-features-icon">
-                                    <span class="icon-tools-2"></span>
+                    </div>
+
+                    <!-- Modal -->
+                    <div id="myModal6" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('myModal6')">&times;</span>
+                            <h2>Intelligence, Surveillance & Reconnaisance (ISR)</h2>
+                        
+                            <p>
+                                As surveillance grows increasingly prevalent, gaining firsthand intelligence on key decision-makers within corporations is becoming an ordinary commodity for malign actors and competitors. Key personnel must be especially careful and additional controls should be implemented. High-profile individuals are likely to be targets of advanced attacks, hence the need to adjust security controls accordingly.
+                            </p>
+                            <p>
+                                We offer simulation of such surveillance techniques, which extend beyond simple user awareness training or phishing campaigns.
+                            </p>
+                            <h3>Inclusions</h3>
+                            <ul>
+                                <li>Targeting and selection.</li>
+                                <li>Simulated human capital surveillance.</li>
+                            </ul>
+                            <h3>Benefits</h3>
+                            <ul>
+                                <li>Reduced reliance on end-user awareness training, as its effectiveness can wane over time.</li>
+                                <li>Robust fortification and precise optimisations for VIP assets.</li>
+                            </ul>
+                            <h3>Enquiries</h3>
+                            <p>
+                            Our e-mail address is located on our <a href="contact.html">contact</a> page.
+                            </p>  
+                        </div>
+                    </div>
+                    <!-- End Features Item -->
+                    <!-- End expiremental feature item-->
+
+
+                    <!-- expiremental feature item-->
+                    <!-- Features Item -->
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="alt-features-item align-center">
+                            <div class="alt-features-icon">
+                                <span class="icon-layers"></span>
+                            </div>
+                            <h3 class="alt-features-title font-alt">Subdomain Takeover</h3>
+                            <div class="alt-features-descr align-left">
+                                We seek and identify any vulnerable DNS configuration that may allow unauthorised takeover of subdomains belonging to the target's core subnet or cloud ecosystem.
+                                <br><br><div style="display: flex; justify-content: center;">
+                                    <a href="javascript:void(0)" class="btn btn-mod btn-border-lm btn-medium btn-round" onclick="openModal('myModal7')">Learn More</a>
                                 </div>
-                                <h3 class="alt-features-title font-alt">Configuration Review</h3>
-                                <div class="alt-features-descr align-left">
-                                    Offered towards various systems and appliances across implemented infrastructure, as well as, network layer and application layer resources. This includes but is not limited to; firewalls, load balancers, IaaS, SaaS, PaaS platforms, Content Management Systems, Databases and more.
-                                <div class="mb-10">
-				</div>
-				</div>
                             </div>
                         </div>
-			<!-- End Features Item -->
-			<!-- Features Item -->
-			<div class="col-sm-6 col-md-4 col-lg-4">
-                            <div class="alt-features-item align-center">
-                                <div class="alt-features-icon">
-                                    <span class="icon-search"></span>
+                    </div>
+
+                    <!-- Modal -->
+                    <div id="myModal7" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('myModal7')">&times;</span>
+                            <h2>Subdomain Takeover</h2>
+                            <p>
+                            Subdomain takeovers are an increasingly common attack vector that can lead to severe reputational damage and data breaches.
+                            </p>
+                            <p>
+                            We inspect your digital infrastructure, identifying misconfigurations and unclaimed resources associated with your domain that could be exploited by attackers. These vulnerabilities often arise when a subdomain points to a service (like a cloud service) that has been removed or deleted, but the DNS record still exists.
+                            </p>
+                            <p>
+                            We ensure that every subdomain is properly configured and pointed to active, legitimate services to prevent any possibility of takeover.
+                            </p>
+                            <p>
+                            Following the engagement, we provide you with a detailed report of our findings and recommendations for maintaining security. Our aim is to equip your establishment with the knowledge and strategies necessary to maintain a secure presence.
+                            </p>
+                            <h3>Inclusions</h3>
+                            <ul>
+                                <li>Comprehensive subdomain mapping,</li>
+                                <li>Identification of insecure DNS configurations,</li>
+                                <li>Checking for orphaned or dangling DNS records,</li>
+                                <li>Securing identified vulnerable subdomains,</li>
+                                <li>Recommendations for maintaining subdomain security.</li>
+                            </ul>
+                            <h3>Benefits</h3>
+                            <p>
+                            Protect your brand, secure your data, and ensure a safe online environment. Not only do we remediate existing vulnerabilities but also provide the knowledge and tools to maintain the integrity of your digital infrastructure moving forward.
+                            </p>
+                            <h3>Enquiries</h3>
+                            <p>
+                            Our e-mail address is located on our <a href="contact.html">contact</a> page.
+                            </p>
+                            
+                            
+                        </div>
+                    </div>
+                    <!-- End Features Item -->
+                    <!-- End expiremental feature item-->
+                    <!-- expiremental feature item-->
+                    <!-- Features Item -->
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="alt-features-item align-center">
+                            <div class="alt-features-icon">
+                                <span class="icon-strategy"></span>
+                            </div>
+                            <h3 class="alt-features-title font-alt">Computational Attacks</h3>
+                            <div class="alt-features-descr align-left">
+                                Cryptographic hash audits, deterministic modelling and entropy analysis. We also offer brute-force, replay and side-channel attack simulations, alongside intensified stress testing.
+                                <br><br><div style="display: flex; justify-content: center;">
+                                    <a href="javascript:void(0)" class="btn btn-mod btn-border-lm btn-medium btn-round" onclick="openModal('myModal8')">Learn More</a>
                                 </div>
-                                <h3 class="alt-features-title font-alt">Secure Code Review</h3>
-                                <div class="alt-features-descr align-left">
-                                    We offer source code analysis to evaluate, review and identify security flaws within your codebase.
-                                <div class="mb-10">
-				</div>
-				</div>
                             </div>
                         </div>
-			<!-- End Features Item -->
-			<!-- Features Item -->
-			<div class="col-sm-6 col-md-4 col-lg-4">
-                            <div class="alt-features-item align-center">
-                                <div class="alt-features-icon">
-                                    <span class="fa fa-pied-piper-alt"></span>
+                    </div>
+
+                    <!-- Modal -->
+                    <div id="myModal8" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('myModal8')">&times;</span>
+                            <h2>Computational Attacks</h2>
+                            <p>
+                            Rigorous audits of your cryptographic hash functions, conducting deterministic modelling to predict potential outcomes of known input data and executing entropy analysis to assess the randomness in your systems, a critical factor for maintaining security.
+                            </p>
+                            <p>
+                            Going beyond conventional methods, we also simulate advanced attack vectors such as brute-force, replay, and side-channel attacks. These simulations are designed to put your systems through their paces, revealing potential vulnerabilities that can be exploited by persistent adversaries.
+                            </p>
+                            <p>
+                            In addition, we offer intensified stress testing services, pushing your systems to their limits to determine how they withstand extreme conditions and heavy load. Our objective is not to break your systems, but to uncover any weak points that might become exploitable under stress.
+                            </p>
+                            <p>
+                            Upon conclusion of our engagement, we provide you with a detailed report of our findings, including identified vulnerabilities, their potential impact, and our recommended mitigation strategies. This empowers your team with the knowledge and guidance to enhance your systems' resilience against computational attacks.
+                            </p>
+                            <h3>Inclusions</h3>
+                            <ul>
+                                <li>Cryptographic hash audits,</li>
+                                <li>Deterministic modelling,</li>
+                                <li>Entropy analysis,</li>
+                                <li>Brute-force attack simulations,</li>
+                                <li>Replay attack simulations,</li>
+                                <li>Side-channel attack simulations,</li>
+                                <li>Intensified stress testing.</li>
+                            </ul>
+                            <h3>Benefits</h3>
+                            <p>
+                            Strengthen your cryptographic systems, mitigate potential threats, and ensure your security measures can withstand the most advanced computational attacks. Our services equip you with a profound understanding of your systems' vulnerabilities, enabling you to make data-driven decisions and implement strategic defenses.
+                            </p>
+                            <h3>Enquiries</h3>
+                            <p>
+                            Our e-mail address is located on our <a href="contact.html">contact</a> page.
+                            </p>
+                            
+                            
+                        </div>
+                    </div>
+                    <!-- End Features Item -->
+                    <!-- End expiremental feature item-->
+
+                    <!-- expiremental feature item-->
+                    <!-- Features Item -->
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="alt-features-item align-center">
+                            <div class="alt-features-icon">
+                                <span class="icon-search"></span>
+                            </div>
+                            <h3 class="alt-features-title font-alt">Secure Code Review</h3>
+                            <div class="alt-features-descr align-left">
+                                We offer source code analysis to evaluate, review and identify security flaws within your codebase.<br><br>
+                                <br><br><div style="display: flex; justify-content: center;">
+                                    <a href="javascript:void(0)" class="btn btn-mod btn-border-lm btn-medium btn-round" onclick="openModal('myModal9')">Learn More</a>
                                 </div>
-                                <h3 class="alt-features-title font-alt">Offline Computational Attacks</h3>
-                                <div class="alt-features-descr align-left">
-					Cryptographic hash audits, deterministic modelling and entropy analysis.
-                                <div class="mb-10">
-				</div>
-				</div>
                             </div>
                         </div>
-			<!-- End Features Item -->
-		  	<!-- Features Item -->
-			<div class="col-sm-6 col-md-4 col-lg-4">
-                            <div class="alt-features-item align-center">
-                                <div class="alt-features-icon">
-                                    <span class="icon-strategy"></span>
-                                </div>
-                                <h3 class="alt-features-title font-alt">Anti D/DoS</h3>
-                                <div class="alt-features-descr align-left">
-                                     An architectural perspective; application, infrastructure and network related controls.
-                                <div class="mb-10">
-				</div>
-				</div>
-                            </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div id="myModal9" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('myModal9')">&times;</span>
+                            <h2>Secure Code Review</h2>
+                            <p>
+                            In the pursuit of secure software, we understand the importance of starting at the very foundation: the code. We scrutinise your software at the most granular level, identifying potential security issues before they become critical vulnerabilities.
+                            </p>
+                            <p>
+                            We meticulously comb through your codebase, looking for common coding pitfalls, anti-patterns, and signs of insecure development. Our review process is not just about detecting security vulnerabilities but also about promoting a secure software development life cycle.
+                            </p>
+                            <p>
+                            Whether it's a web application, mobile app, embedded system, or a complex enterprise software, we can handle it. We will not only identify the potential security flaws in your code but also provide detailed recommendations on how to resolve these issues and improve your overall code quality.
+                            </p>
+                            <p>
+                            Upon completion, we deliver a comprehensive report, covering our findings, their implications, and recommended remediation steps. This allows your development team to gain insights into secure coding practices, enhancing the security of your applications from the ground up.
+                            </p>
+                            <h3>Inclusions</h3>
+                            <ul>
+                                <li>Comprehensive codebase review,</li>
+                                <li>Identification of security vulnerabilities and anti-patterns,</li>
+                                <li>Best practices recommendations,</li>
+                                <li>Assessment of code quality,</li>
+                                <li>Follow-up consultation for remediation strategies.</li>
+                            </ul>
+                            <h3>Benefits</h3>
+                            <p>
+                            Improve the security of your software, increase the quality of your code, and foster secure development practices within your team. Our Secure Code Review not only strengthens your software but also enhances your development process, leading to more robust and secure releases in the future.
+                            </p>
+                            <h3>Enquiries</h3>
+                            <p>
+                            Our e-mail address is located on our <a href="contact.html">contact</a> page.
+                            </p>
+                            
+                            
                         </div>
-			<!-- End Features Item -->
-			<!-- Features Item -->
-			<div class="col-sm-6 col-md-4 col-lg-4">
-                            <div class="alt-features-item align-center">
-                                <div class="alt-features-icon">
-                                    <span class="fa fa-chain-broken"></span>
-                                </div>
-                                <h3 class="alt-features-title font-alt">Incident Response</h3>
-                                <div class="alt-features-descr align-left">
-                                    Experienced a breach? We could assist in attack path identification, risk evaluation of compromise, malware & persistent access (backdoor) removal.
-                                <div class="mb-10">
-				</div>
-				</div>
-                            </div>
-                        </div>
-			<!-- End Features Item -->
+                    </div>
+                    <!-- End Features Item -->
+                    <!-- End expiremental feature item-->
                 </div>
 	    	<div>
 	    	</div>
