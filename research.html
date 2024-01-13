@@ -107,9 +107,9 @@
                 <div class="relative container align-left">
                     <div class="row">
                         <div class="col-md-8">
-                            <h1 class="hs-line-11 font-alt mb-20 mb-xs-0">Security Research & Advisories</h1>
+                            <h1 class="hs-line-11 font-alt mb-20 mb-xs-0">Security Research & Publications</h1>
                             <div class="hs-line-4 font-alt">
-                                ((((&lambda;f.(&lambda;x.(fx)))(&lambda;y.y))(&lambda;z.z)))
+                                To be defensive, you must know the offensive.
                             </div>
                         </div>
                         <div class="col-md-4 mt-30">
@@ -139,70 +139,103 @@
                              <div class="col-sm-6 col-md-4 col-lg-4">
                                 <div class="alt-features-item align-left">
                                     <div class="alt-features-icon">
-                                        <span></span>
+                                        <span></span>  
                                     </div>
-                                    <p></p><p></p><br>
-                                    <a href="https://homecrew.dev/posts/cve-2020-16040.html"><img src="https://i.ibb.co/ZSzrpww/chrome-v8.png"></a>
-                                    <h3 class="alt-features-title font-alt">Analysis & Exploitation of Chrome's V8 Engine (CVE-2020-16040)</h3>
+                                    <img src="https://i.ibb.co/xzc4vW2/chrome-v8-png.png">                 
+                                    <h3 class="alt-features-title font-alt">Exploiting Google Chrome's V8 JIT Engine (CVE-2020-16040)</h3>
                                     <div class="alt-features-descr align-left">
-                                        Chrome's V8 JIT compiler's Simplified Lowering VisitSpeculativeIntegerAdditiveOp was setting Signed32 as restriction type, even when relying on a Word32 truncation, skipping an overflow check. To summarise, the problem was due to a mis-typing of nodes despite the value wrapping/overflowing. Which allowed for a typer hardening bypass to achieve out-of-bounds r/w primitives, leading to arbitrary remote code execution within the renderer's process. Affects Chrome versions <=87.0.4280.88.
+                                        Chrome's V8 JIT compiler's Simplified Lowering VisitSpeculativeIntegerAdditiveOp was setting Signed32 as restriction type, even when relying on a Word32 truncation, skipping an overflow check. To summarise, the problem was due to a mis-typing of nodes despite the value wrapping/overflowing. Which allowed for a typer hardening bypass to achieve out-of-bounds r/w primitives, leading to arbitrary remote code execution within the renderer's process.
+                                        <p></p>
                                     <div class="mb-10">
+                                    <div style="display: flex; justify-content: center;">
+                                        <a href="https://homecrew.dev/posts/cve-2020-16040.html" target="_blank" class="btn btn-mod btn-border-lm btn-medium btn-round">Read More</a>
                                     </div>
-                                    </div>
-                                </div>
+								</div>
+								</div>
                             </div>
+                        </div>
                             <!-- End Features Item -->
-                         <!-- Features Item -->
+                            <!-- Features Item -->
                         <div class="col-sm-6 col-md-4 col-lg-4">
                             <div class="alt-features-item align-left">
                                 <div class="alt-features-icon">
                                     <span></span>
                                 </div>
-                                <a href="#"><img src="https://i.imgur.com/urlYlPm.png" /></a>
-                                <h3 class="alt-features-title font-alt">Sqiva System 2.5 & below: Multiple Vulnerabilities</h3>
+                                <img src="https://i.ibb.co/VvS2Tpt/ECDHzoomed.png"/>
+                                <h3 class="alt-features-title font-alt">Elliptic Curve Diffie-Hellman Theoretical Analysis</h3>
                                 <div class="alt-features-descr align-left">
-                                    CVE-2018-16995, CVE-2018-16997 & CVE-2018-16998: Sqiva System 2.5 & below suffers from multiple client-side vulnerabilities.
-                                <div class="mb-10">
+                                    Elliptic curve Diffie-Hellman (ECDH) is an anonymous key agreement protocol, an extension of the conventional Diffie-Hellman protocol, but incorporates elliptic curves as opposed to integers over Galois fields. This theoretical analysis elucidates the employed mathematical mechanisms, specifically exploring group operations and the intricate mechanics of the curve.
+                                    <p></p>
+                                   <div class="mb-10">
+                                    <br><br><div style="display: flex; justify-content: center;">
+                                        <a href="https://homecrew.dev/posts/ecdh.html" target="_blank" class="btn btn-mod btn-border-lm btn-medium btn-round">Read More</a>
+                                    </div>
 								</div>
 								</div>
                             </div>
                         </div>
                         <!-- End Features Item -->
                         <!-- Features Item -->
+                        <div class="col-sm-6 col-md-4 col-lg-4">
+                            <div class="alt-features-item align-left">
+                                <div class="alt-features-icon">
+                                    <span></span>
+                                </div>
+                                <br>
+                                <img src="https://i.ibb.co/ZXgv9Rg/Diffie-Hellman-Key-Exchange.png"/>
+                                <h3 class="alt-features-title font-alt">Conventional Diffie-Hellman Theoretical Analysis</h3>
+                                <div class="alt-features-descr align-left">
+                                    The conventional Diffie-Hellman key exchange is a popular means of generating a shared secret between two individuals through integers over finite fields without it being known to external observers. This theoretical analysis aims to elucidate the employed mathematical mechanisms, focusing on the discrete logarithm problem and modular arithmetic.	
+                                    <p></p>
+                                    <div class="mb-10">
+                                        <br><br><div style="display: flex; justify-content: center;">
+                                            <a href="https://homecrew.dev/posts/dh.html" target="_blank" class="btn btn-mod btn-border-lm btn-medium btn-round">Read More</a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- End Features Item -->
+                        <!-- Features Item -->
+                        <div class="col-sm-6 col-md-4 col-lg-4">
+                            <div class="alt-features-item align-left">
+                                <div class="alt-features-icon">
+                                    <span></span>
+                                </div>
+                                <img src="https://i.ibb.co/30wKPJv/android.png" height="200" width="300"/>
+                                <h3 class="alt-features-title font-alt">Android Malware Analysis</h3>
+                                <div class="alt-features-descr align-left">
+                                An analysis of Android malware with APT36 origins, a Pakistani government-aligned actor that is a politically motivated Advanced Persistent Threat (APT) group. This APT group has been linked to Pakistan and mainly focuses its resources on targeting Indian Government entities and personnel. The motivation behind these attacks is information theft and espionage to gather intelligence from the Indian government, military, and diplomatic resources.
+								<p></p>
+                                <div class="mb-10">
+                                    <div style="display: flex; justify-content: center;">
+                                        <a href="https://homecrew.dev/posts/apt36.html" target="_blank" class="btn btn-mod btn-border-lm btn-medium btn-round">Read More</a>
+                                    </div>
+								</div>
+								</div>
+                            </div>
+                        </div>
+                        <!-- End Features Item -->
+                        <!-- Features Item 
                         <div class="col-sm-6 col-md-4 col-lg-4">
                             <div class="alt-features-item align-center">
                                 <div class="alt-features-icon">
                                     <span></span></div>
-                                    <a href="https://ret2eax.github.io/posts/CVE-2017-12439.html" target="_blank"><img src="https://i.imgur.com/IHTsogy.jpg" height="180" width="160" /></a>
-                                <h3 class="alt-features-title font-alt">Socusoft Flash SSM: Multiple Vulnerabilities</h3>
+                                <img src="https://i.imgur.com/IHTsogy.jpg" height="180" width="160" />
+                                <h3 class="alt-features-title font-alt">Socusoft FSSM (CVE-2017-12439) Advisory</h3>
                                 <div class="alt-features-descr align-left">
-                                    CVE-2017-12439:<br>SocuSoft Flash Slideshow Maker Professional through v5.20, when the advanced configuration is used, inherts an xml_path HTTP parameter that trusts user-supplied input, in conjunction with an unsafe XML configuration file. This has resultant content forgery, cross site scripting, and unvalidated redirection issues.
-								<div class="mb-10">
-								</div>
-								</div>
-                            </div>
-                        </div>
-                        <!-- End Features Item -->
-                        <!-- Features Item -->
-                        <div class="col-sm-6 col-md-4 col-lg-4">
-                            <div class="alt-features-item align-left">
-                                <div class="alt-features-icon">
-                                    <span></span>
+                                    SocuSoft Flash Slideshow Maker Professional through v5.20, when the advanced configuration is used, inherts an xml_path HTTP parameter that trusts user-supplied input, in conjunction with an unsafe XML configuration file. This has resultant content forgery, cross site scripting, and unvalidated redirection issues.
+                                    <p></p>
+                                    <div class="mb-10">
+                                        <div style="display: flex; justify-content: center;">
+                                            <a href="https://homecrew.dev/posts/CVE-2017-12439.html" target="_blank" class="btn btn-mod btn-border-lm btn-medium btn-round">Read More</a>
+                                        </div>
+                                    </div>
+                                    </div>
                                 </div>
-                                <a href="#" target="_blank"><img src="https://i.imgur.com/nEiNXlr.gif" height="180" width="160" /></a>
-                                <a href="#" target="_blank"><img src="https://i.imgur.com/37LfJzS.gif" height="180" width="160" /></a>
-                                <h3 class="alt-features-title font-alt">Socusoft P2V Converter: Local Buffer Overflow</h3>
-                                <div class="alt-features-descr align-left">
-                                    Socusoft's Photo 2 Video Converter v8.0.0 (Free and Professional variants) contains a local buffer overflow condition in the pdmlog.dll library. Exploitation can result in x86 register rewrites to control program execution flow, therefore, resulting in the potential ability to execute arbitrary shellcode and execute local denial-of-service conditions.
-									
-                                <div class="mb-10">
-								<!--<a class="btn btn-mod btn-border btn-circle btn-large" href="#">Learn More</a>-->
-								</div>
-								</div>
                             </div>
-                        </div>
-                        
-                        
+                        End Features Item -->
+                         
                 </div>
             </section>
             <!-- End Features Section -->
